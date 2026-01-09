@@ -1,0 +1,27 @@
+{
+  "includePaths": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"],
+  "excludePaths": ["node_modules/**", "dist/**", "build/**", "**/*.d.ts"],
+  "testPatterns": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/__tests__/**",
+    "**/tests/**"
+  ],
+  "criticalPathPatterns": [
+    "**/auth/**",
+    "**/payment/**",
+    "**/billing/**",
+    "**/security/**",
+    "**/admin/**"
+  ],
+  "riskThresholds": {
+    "low": 3,
+    "medium": 5,
+    "high": 7
+  },
+  "sensitivity": "medium",
+  "cacheEnabled": true,
+  "cachePath": ".ripple-cache"
+}
